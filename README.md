@@ -1,48 +1,41 @@
+# Nest To-Do App
+
+This is a basic to-do list web application built with NestJS.
+
 ## Description
 
-A simple 'to-do' app on Nest.js
-## Installation
+The app provides REST API endpoints for CRUD operations on a to-do list. Users can:
 
-```bash
-$ npm install
-```
+- Get all to-do items
+- Add a new to-do item
+- Update an existing to-do item
+- Delete a to-do item
+- Mark a to-do item as completed
 
-## Running the app
+The to-do items are stored in memory using a NestJS service.
 
-```bash
-# development
-$ npm run start
+The main technologies used are:
 
-# watch mode
-$ npm run start:dev
+- NestJS framework
+- REST API principles
+- TypeScript
 
-# production mode
-$ npm run start:prod
-```
+## Usage
 
-## Test
+To run the app locally:
 
-```bash
-# unit tests
-$ npm run test
+1. Clone the repository
+2. Run `npm install`
+3. Run `npm run start`
+4. The server will start on port 3000
+5. Use a tool like Postman to test the API endpoints
 
-# e2e tests
-$ npm run test:e2e
+## Endpoints
 
-# test coverage
-$ npm run test:cov
-```
+The main endpoints are:
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+- GET /todos - Get all to-do items
+- POST /todos - Create a new to-do
+- PUT /todos/:id - Update an existing to-do
+- DELETE /todos/:id - Delete a to-do
+- PATCH /todos/:id/status - Update a to-do status
